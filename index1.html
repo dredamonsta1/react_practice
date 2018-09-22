@@ -1,0 +1,140 @@
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+<script src="node_modules/react/dist/react.js"></script>
+<script src="node_modules/react-dom/dist/react-dom.js"></script>
+<script>
+console.log(React);
+console.log(ReactDOM);
+/*
+Prints the following:
+{
+"type":"button",
+"key":null,
+"ref":null,
+"props": {
+"children":"Click Me!"
+},
+"_owner":null,
+"_store":{}
+}
+*/
+</script>
+
+<div id="app"></div>
+<div id="appi"></div>
+
+<script>
+// const myButton = React.createElement('button', null, 'Click Me!');
+
+// console.log(JSON.stringify(myButton));
+// ReactDOM.render(myButton, document.getElementById('app'));
+</script>
+
+<p>The current time is: <span id="time"></span></p>
+<button id="time-btn">Get current time</button>
+
+<script>
+document.getElementById('time-btn').onclick = () => {
+document.getElementById('time').innerHTML = new Date().toString();
+}
+ // setInterval(render, 1000);
+</script>
+
+
+
+
+<script>
+const MyComponent = (data) => UI;
+const clock = React.createElement('clock', null, 'Click Me!');
+const myButton = React.createElement('button', null, 'Click Me!');
+console.log(JSON.stringify(myButton));
+// dateObj.toLocaleTimeString([locales[, options]])
+
+ReactDOM.render(myButton, document.getElementById('app'));
+ReactDOM.render(clock, document.getElementById('appi'));
+// ReactDOM.render(clock,toLocaleTimeString('en-US', options));
+// dateObj.toLocaleTimeString([locales[, options]])
+// setInterval(render, 1000);
+</script>
+
+
+
+
+<script>
+var date = new Date(Date.UTC(2017, 11, 12, 3, 0, 0));
+
+// toLocaleTimeString() without arguments depends on the implementation,
+// the default locale, and the default time zone
+console.log(date.toLocaleTimeString());
+// → "7:00:00 PM" if run in en-US locale with time zone America/Los_Angeles
+</script>
+
+
+
+<script>
+// function toLocaleTimeStringSupportsLocales() {
+  // try {
+    // new Date().toLocaleTimeString('i');
+  // } catch (e) {
+    // return e​.name === 'RangeError';
+  // }
+  // return false;
+// }
+</script>
+
+
+<!-- 
+var React = require('react');
+var ReactDOM = require('react-dom'); -->
+
+<script>
+// var React = require('react');
+// var ReactDOM = require('react-dom');
+
+$(document).ready(function(){
+	alart('heyyyyyyyyy');
+	
+})
+</script>
+
+
+
+
+<script>
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+var container = document.getElementById('container');
+
+ReactDOM.render(
+  React.createElement(
+    'p',
+    {},
+    'This is a paragraph of text with ',
+    React.createElement(
+      'a',
+      {href: 'http://www.example.com'},
+      'links to other web sites'
+    ),
+    ', ',
+    React.createElement(
+      'b',
+      {},
+      'some text in bold'
+    ),
+    ' and ',
+    React.createElement(
+      'i',
+      {},
+      'some text in italics'
+    )
+  ),
+  container
+);
+
+</script>
